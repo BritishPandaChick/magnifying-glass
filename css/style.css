@@ -6,6 +6,7 @@
 .magnify {
     width: 200px;
     margin: 50px auto;
+    position: relative;
 }
 
 .large {
@@ -21,8 +22,12 @@
 
     /* lets load up the large image first */
     background: url("http://thecodeplayer.com/uploads/media/iphone.jpg") no-repeat;
+
+    /* hide the glass by default */
+    display: none;
 }
 
-.magnify {
-    position: relative;
+/* To solve overlap bug at the edges */
+.small {
+    display: block;
 }
